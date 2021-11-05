@@ -9,20 +9,31 @@
 * {
     box-sizing: border-box;
 }
+/* to reduce size of text with and above the icons */
+html, body {
+  font-size: 14px;
+}
+/* to make the headline noticeably bigger than the copy */
+h1 {
+  font-size: 2.5em;
+  margin: 10px;
+}
 
-html, body{
-    font-size: 16px;
+/* replaces p2 and p2 tags */
+p {
+  font-size: 1.5em;
+  margin: 10px;
 }
 
 img {
   display: flex;
   max-width: 100%;
-
 }
 
-.container{
+.container {
   max-width: 800px;
   margin: 0 auto;
+  /* background-color: rgba(0, 128, 0, 0.6) */
 }
 
 .flex{
@@ -31,7 +42,6 @@ img {
   * wrap to a new row
   */
   flex-wrap: wrap;
-  display:  flex;
 
   /*
   * When the flex-basis doesn't add up to 100%,
@@ -40,44 +50,46 @@ img {
   */
 
   justify-content: space-between;
-  font-size:  2em;
+  font-size:  1.5em;
+}
+/* makes the boxes disappear and aligns text left */
+.icon, .text{
+  padding: 10px;
+  margin-bottom: 10px;
+  /* border: 1px solid #FFF; */
+  text-align: left;
 }
 
-.icon, .text{
-  padding: 25px;
-  margin-bottom: 22px;
-  border: 1px solid #000;
-  text-align: left;
-  text-indent: 50px;
-}
+
 
 /*
 * Flex-basis between elements in a row add up to
 * 97% and the 3% is distributed
 */
 .icon {
-  flex-basis: 25%;
-  text-align: left;
+  flex-basis: 20%;
 }
 
 .text {
-  flex-basis: 72%;
-  text-align:left;
+  flex-basis: 78%;
 }
-.icon img{max-width:100px}
 
-.texttwo{
-  padding: 10px;
-  margin-bottom: 22px;
-  border: 1px solid #000;
-  text-align: right;
-}
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+.flex {
+  display: flex;
+}
+
+img {
+  display: flex;
+  max-width 100%;
+}
 }
 
 /*********************************************************************
@@ -86,35 +98,6 @@ img {
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
-}
 
-body {
- background-color: rgba(0, 128, 0, 0.6);
-}
-h1 {
-  text-align: left;
-  color: white;
-  opacity: 1.0
-}
-p {
-  text-align: left;
-  color: white;
-  font-size: 12px;
-}
-h1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 200px;
-  margin-left: 200px;
-}
-p2 {
-  text-align: right;
-}
-p3 {
-  text-align: center;
-}
-.containertwo {
-  max-width: 800px;
-  margin: 0 auto;
-  border-style: double;
+
 }
