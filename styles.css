@@ -75,6 +75,12 @@ img {
   flex-basis: 78%;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
@@ -92,6 +98,13 @@ img {
  max-width: 800px;
   height: 400px;
 }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /*********************************************************************
