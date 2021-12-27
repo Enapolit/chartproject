@@ -7,6 +7,10 @@
   YOUR MOBILE/BASE STYLES GO HERE
 *********************************************************************
 
+figcaption {
+text-align: center;
+}
+
 html, body {
   font-size: 14px;
 
@@ -38,7 +42,7 @@ img {
 }
 
 .img, .text{
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 10px;
   /* border: 1px solid #FFF; */
   text-align: left;
