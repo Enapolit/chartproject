@@ -37,6 +37,12 @@ img {
   width: 90%;
 }
 
+.img, .text{
+  padding: 10px;
+  margin-bottom: 10px;
+  /* border: 1px solid #FFF; */
+  text-align: left;
+}
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
