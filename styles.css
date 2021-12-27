@@ -5,15 +5,11 @@
 
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
-*********************************************************************/
-* {
-    box-sizing: border-box;
-}
-/* to reduce size of text with and above the icons */
+*********************************************************************
+
 html, body {
   font-size: 14px;
-}
-/* to make the headline noticeably bigger than the copy */
+
 h1 {
   font-size: 2.5em;
   margin: 10px;
@@ -27,47 +23,7 @@ p {
 
 img {
   display: flex;
-  width: 140%;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  /* background-color: rgba(0, 128, 0, 0.6) */
-}
-
-.flex{
-  /*
-  * When two elements combined exceed 100%
-  * wrap to a new row
-  */
-  flex-wrap: wrap;
-
-  /*
-  * When the flex-basis doesn't add up to 100%,
-  * distribute the negative space between the
-  * elements
-  */
-
-  justify-content: space-between;
-  font-size:  1.5em;
-}
-/* makes the boxes disappear and aligns text left */
-.icon, .text{
-  padding: 10px;
-  margin-bottom: 10px;
-  /* border: 1px solid #FFF; */
-  text-align: left;
-}
-
-
-
-/*
-* Flex-basis between elements in a row add up to
-* 97% and the 3% is distributed
-*/
-.icon {
-  flex-basis: 20%;
+  width: 100%;
 }
 
 .text {
@@ -78,7 +34,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
 
 /*********************************************************************
@@ -94,7 +50,7 @@ img {
 
 img {
   display: flex;
- max-width: 1600px;
+ max-width: 800px;
   height: 400px;
 }
 }
@@ -103,7 +59,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
 
 /*********************************************************************
